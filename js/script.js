@@ -5,11 +5,12 @@ var numero = document.getElementById('numero');
 
 var contenutoPrecedente;
 listaCognomi.push(cognome);
+listaCognomi.sort();
 for (var i = 0; i < listaCognomi.length; i++) {
 
   contenutoPrecedente = listaOutput.innerHTML;
   listaOutput.innerHTML = contenutoPrecedente + '<li>' + listaCognomi[i] + '</li>';
-  listaCognomi.sort();
+
   var ordine = listaCognomi.indexOf(cognome)
 }
 numero.innerText = (ordine + 1);
